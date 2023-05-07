@@ -12,4 +12,7 @@ jobs:
         uses: lunarmodules/ldoc@v1.5.0
         with:
             args: --filter dump . > dist/api-declaration.lua
-        
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist # The folder the action should deploy.
