@@ -1,0 +1,15 @@
+name: LDoc
+on: [ push, pull_request ]
+jobs:
+  sile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Generate Doc Website with LDoc
+        uses: lunarmodules/ldoc@v0
+      - name: Generate dump to file with LDoc
+        uses: lunarmodules/ldoc@v0
+        with:
+            args: --filter dump . > dist/api-declaration.lua
+        
