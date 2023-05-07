@@ -1,7 +1,5 @@
 # Getting Started with LDoc
 
-@lookup README.md
-
 ## Introduction
 
 LDoc is a software documentation tool which automatically generates API documentation out of source code comments (doc comments).
