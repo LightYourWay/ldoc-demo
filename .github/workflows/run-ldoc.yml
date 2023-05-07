@@ -7,9 +7,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Generate Doc Website with LDoc
-        uses: lunarmodules/ldoc@v0
+        uses: lunarmodules/ldoc@v1.5.0
       - name: Generate dump to file with LDoc
-        uses: lunarmodules/ldoc@v0
+        uses: lunarmodules/ldoc@v1.5.0
         with:
             args: --filter dump . > dist/api-declaration.lua
         
